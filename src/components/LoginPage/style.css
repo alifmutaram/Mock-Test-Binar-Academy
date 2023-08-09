@@ -1,0 +1,14 @@
+.container-login {
+  margin-top: 3em;
+  padding: 3em;
+  width: 40%;
+  background: #f8f9fa;
+  box-shadow: 0 5px 10px rgba(27, 58, 182, 0.05),
+    0 15px 40px rgba(36, 68, 197, 0.2);
+}
+
+@media screen and (max-width: 576px) {
+  .container-login {
+    padding: 1em;
+  }
+}

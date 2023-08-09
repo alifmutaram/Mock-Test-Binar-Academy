@@ -1,0 +1,24 @@
+.container-navbar {
+  height: 100vh;
+  /* background-color: blueviolet; */
+}
+.nav-bar {
+  background-color: rgb(25, 49, 49);
+  padding: 1em;
+}
+.nav-home {
+  font-size: 1.7rem;
+}
+.nav-home {
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  margin-left: 1.2em;
+}
+.nav-log {
+  font-size: 1.3rem !important;
+  color: white;
+  font-weight: 600;
+  margin-right: 1.5em;
+  text-decoration: none;
+}
