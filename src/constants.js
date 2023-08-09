@@ -1,1 +1,1 @@
-export const API = "http://localhost:3030/users";
+export const API = "https://jsonplaceholder.typicode.com/users";
