@@ -10,7 +10,7 @@ const NavbarMenu = () => {
         className="nav-bar"
       >
         <Navbar.Brand>
-          <Link to="/" className="nav-home">
+          <Link to="/todo" className="nav-home">
             Todo App
           </Link>
         </Navbar.Brand>
