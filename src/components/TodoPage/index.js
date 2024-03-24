@@ -60,7 +60,7 @@ const Todo = () => {
               type="submit"
               onClick={handleTodo}
             >
-              submit
+              SUBMIT
             </Button>
           </Form>
         </Row>

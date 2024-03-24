@@ -3,23 +3,22 @@ import { API } from "../constants";
 
 const useAuthLogin = () => {
   const [dataAuthLogin, setDataAuthLogin] = useState({});
+  console.log({ dataAuthLogin });
 
-  const postAuthLogin = () => {
-    fetch(`${API}/login`, {
+  const postAuthLogin = ({ param, id, valNum }) => {
+    fetch(`${API}/${valNum}`, {
       method: "POST",
-      body: JSON.stringify({
-        id: 2234,
-        name: "name",
-        email: "email",
-      }),
       headers: {
-        "Content-Type": "application/json",
+        "Content-Type": "application/json; charset=UTF-8",
       },
+      body: JSON.stringify({
+        id: valNum,
+      }),
     })
       .then((res) => res.json())
       .then((result) => {
-        console.log({ result });
         setDataAuthLogin(result);
+        console.log({ result });
       });
   };
 

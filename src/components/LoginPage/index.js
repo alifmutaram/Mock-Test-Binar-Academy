@@ -8,13 +8,15 @@ import { AuthContextLogin } from "../../context/authLogin";
 import "./style.css";
 const LoginPage = () => {
   const [postAuthLogin, dataAuthLogin] = useContext(AuthContextLogin);
-  console.log({ dataAuthLogin });
+  // console.log({ dataAuthLogin });
 
   const handleButtonLogin = (e) => {
     e.preventDefault();
     const { number } = e.target.elements;
-    console.log({ number: number.value });
-    postAuthLogin({ number: number.value });
+    const valNum = number.value;
+    console.log(valNum);
+    // console.log({ number: number.value });
+    postAuthLogin({ valNum });
   };
   return (
     <>
